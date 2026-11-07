@@ -1,0 +1,270 @@
+{% comment %}
+  Local override of al_folio_core's _includes/header.liquid (v1.0.15). Changes from upstream:
+  - an optional `nav_icon` front-matter field on a page adds a Font Awesome icon before its navbar link;
+  - the homepage navbar shows only Scholar, GitHub, and LinkedIn (email and CV stay in _data/socials.yml for search and metadata);
+  - a <style> block below refines the navbar's look. It uses the theme's color variables, so it follows light/dark mode.
+{% endcomment %}
+<style>
+  #navbar {
+    opacity: 1;
+    background-color: var(--global-bg-color);
+    background-color: color-mix(in srgb, var(--global-bg-color) 88%, transparent);
+    -webkit-backdrop-filter: saturate(160%) blur(10px);
+    backdrop-filter: saturate(160%) blur(10px);
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+  /* Social icons (homepage) */
+  #navbar .navbar-brand.social {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    font-size: 1.55rem;
+    padding: 0;
+  }
+  #navbar .navbar-brand.social a {
+    display: inline-flex;
+    line-height: 1;
+    transition: transform 0.15s ease;
+  }
+  #navbar .navbar-brand.social a i::before {
+    color: var(--global-text-color-light);
+    transition: color 0.15s ease;
+  }
+  #navbar .navbar-brand.social a:hover {
+    transform: translateY(-1px);
+  }
+  #navbar .navbar-brand.social a i.ai {
+    font-size: 1.15em; /* academicons glyphs run smaller than Font Awesome */
+  }
+  /* Keep the theme toggle vertically aligned with the search control */
+  #navbar .toggle-container,
+  #navbar #light-toggle {
+    display: flex;
+    align-items: center;
+  }
+  #navbar #light-toggle {
+    transform: none; /* the theme nudges it down 4px for top-aligned items; ours are centered */
+  }
+  #navbar .navbar-brand.social a:hover i::before {
+    color: var(--global-theme-color);
+  }
+  /* Nav links */
+  #navbar .navbar-menu-list > .nav-item > .nav-link {
+    text-transform: capitalize;
+    padding: 0.4rem 0.75rem;
+    border-radius: 0.5rem;
+    transition: color 0.15s ease, background-color 0.15s ease;
+  }
+  #navbar .navbar-menu-list > .nav-item > .nav-link:hover {
+    color: var(--global-theme-color);
+    background-color: color-mix(in srgb, var(--global-theme-color) 9%, transparent);
+  }
+  #navbar .navbar-menu-list > .nav-item.active > .nav-link {
+    font-weight: 500;
+    color: var(--global-theme-color);
+    background-color: color-mix(in srgb, var(--global-theme-color) 14%, transparent);
+  }
+  #navbar .nav-link > i.fa-fw {
+    font-size: 0.9em;
+    margin-right: 0.2rem;
+    opacity: 0.7;
+    transition: opacity 0.15s ease;
+  }
+  #navbar .nav-link:hover > i.fa-fw,
+  #navbar .nav-item.active > .nav-link > i.fa-fw {
+    opacity: 1;
+  }
+  @media (min-width: 576px) {
+    #navbar .navbar-menu-list {
+      align-items: center;
+      gap: 0.15rem;
+    }
+    /* Divider between page links and the search / theme controls */
+    #navbar .navbar-menu-list > .nav-item:has(#search-toggle) {
+      margin-left: 0.5rem;
+      padding-left: 0.6rem;
+      border-left: 1px solid var(--global-divider-color);
+    }
+  }
+  @media (max-width: 575.98px) {
+    #navbar .navbar-menu-list > .nav-item {
+      width: 100%;
+    }
+    #navbar .navbar-menu-list > .nav-item > .nav-link {
+      margin: 0.1rem 0;
+    }
+    /* Line the search and theme controls up with the page links */
+    #navbar #search-toggle {
+      padding-left: 0.75rem;
+    }
+    #navbar .toggle-container {
+      padding-left: 0.3rem; /* the toggle button is 2rem wide with its icon centered */
+    }
+  }
+</style>
+<header>
+  <!-- Nav Bar -->
+  <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
+    <div class="container">
+      {% if page.permalink != '/' %}
+        <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
+          {% if site.title == 'blank' %}
+            {% if site.first_name %}
+              <span class="font-weight-bold">
+                {{- site.first_name -}}
+              </span>
+            {% endif %}
+            {% if site.middle_name %}
+              {{- site.middle_name -}}
+            {% endif %}
+            {% if site.last_name %}
+              {{- site.last_name -}}
+            {% endif %}
+          {% else %}
+            {{- site.title -}}
+          {% endif %}
+        </a>
+      {% elsif site.enable_navbar_social %}
+        <!-- Social Icons -->
+        {% assign nav_socials = site.data.socials %}
+        <div class="navbar-brand social">
+          {% if nav_socials.scholar_userid %}
+            <a href="https://scholar.google.com/citations?user={{ nav_socials.scholar_userid }}" title="Google Scholar" aria-label="Google Scholar"
+              ><i class="ai ai-google-scholar"></i
+            ></a>
+          {% endif %}
+          {% if nav_socials.github_username %}
+            <a href="https://github.com/{{ nav_socials.github_username }}" title="GitHub" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          {% endif %}
+          {% if nav_socials.linkedin_username %}
+            <a href="https://www.linkedin.com/in/{{ nav_socials.linkedin_username }}" title="LinkedIn" aria-label="LinkedIn"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          {% endif %}
+        </div>
+      {% endif %}
+      <!-- Navbar Toggle -->
+      <button
+        class="navbar-toggler collapsed navbar-toggler-main"
+        type="button"
+        data-nav-toggle="navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+
+      <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav">
+        <ul class="navbar-nav navbar-menu-list flex-nowrap">
+          {% for page in site.pages %}
+            {% if page.permalink == '/' %} {% assign about_title = page.title %}{% assign about_icon = page.nav_icon %} {% endif %}
+          {% endfor %}
+
+          <!-- About -->
+          <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
+            <a class="nav-link" href="{{ '/' | relative_url }}">
+              {%- if about_icon %}<i class="{{ about_icon }} fa-fw" aria-hidden="true"></i> {% endif -%}
+              {{- about_title }}
+              {% if page.permalink == '/' %}
+                <span class="sr-only">(current)</span>
+              {% endif %}
+            </a>
+          </li>
+
+          <!-- Other pages -->
+          {% assign sorted_pages = site.pages | sort: 'nav_order' %}
+          {% for p in sorted_pages %}
+            {% if p.nav and p.autogen == null %}
+              {% if p.dropdown %}
+                {% assign has_active_child = false %}
+                {% for child in p.children %}
+                  {% if page.title == child.title %}
+                    {% assign has_active_child = true %}
+                  {% endif %}
+                {% endfor %}
+                <li class="nav-item dropdown {% if page.title == p.title or has_active_child %}active{% endif %}">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-nav-dropdown-toggle="true"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    {{- p.title }}
+                    {% if page.title == p.title or has_active_child %}
+                      <span class="sr-only">(current)</span>
+                    {% endif %}
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    {% for child in p.children %}
+                      {% if child.title == 'divider' %}
+                        <div class="dropdown-divider"></div>
+                      {% else %}
+                        <a
+                          class="dropdown-item {% if page.title == child.title %}active{% endif %}"
+                          href="{% if child.permalink contains '://' %}{{ child.permalink }}{% else %}{{ child.permalink | relative_url }}{% endif %}"
+                        >
+                          {{- child.title -}}
+                        </a>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                </li>
+              {% else %}
+                {% assign parent_link = p.permalink | remove: 'index.html' %}
+                <li class="nav-item {% if page.url contains parent_link %}active{% endif %}">
+                  {%- if p.permalink contains '://' -%}
+                    {%- assign url = p.permalink -%}
+                  {%- elsif p.permalink contains '/blog/' -%}
+                    {%- assign url = '/blog/' -%}
+                  {%- else -%}
+                    {%- assign url = p.url -%}
+                  {%- endif %}
+                  <a class="nav-link" href="{{ url | relative_url }}">
+                    {%- if p.nav_icon %}<i class="{{ p.nav_icon }} fa-fw" aria-hidden="true"></i> {% endif -%}
+                    {{- p.title }}
+                    {% if page.url contains p.url %}
+                      <span class="sr-only">(current)</span>
+                    {% endif %}
+                  </a>
+                </li>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+          {% if site.search_enabled %}
+            <!-- Search -->
+            <li class="nav-item">
+              <button id="search-toggle" type="button" title="Search" aria-label="Open search">
+                <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span>
+              </button>
+            </li>
+          {% endif %}
+          {% if site.enable_darkmode %}
+            <!-- Toogle theme mode -->
+            <li class="toggle-container">
+              <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme">
+                <i class="fa-half-sun-moon" id="light-toggle-system"></i>
+                <i class="fa-solid fa-moon" id="light-toggle-dark"></i>
+                <i class="fa-solid fa-sun" id="light-toggle-light"></i>
+              </button>
+            </li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+  </nav>
+  {% if site.enable_progressbar %}
+    <!-- Scrolling Progress Bar -->
+    <progress id="progress" value="0">
+      <div class="progress-container">
+        <span class="progress-bar"></span>
+      </div>
+    </progress>
+  {% endif %}
+</header>

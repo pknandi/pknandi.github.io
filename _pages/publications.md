@@ -2,7 +2,8 @@
 layout: page
 permalink: /publications/
 title: publications
-description: Publications and patents in reverse chronological order.
+nav_icon: fa-solid fa-book-open
+description: Papers and patents in reverse chronological order.
 nav: true
 nav_order: 1
 ---
@@ -13,8 +14,18 @@ nav_order: 1
 
 {% include bib_search.liquid %}
 
+## Papers
+
 <div class="publications">
 
-{% bibliography %}
+{% bibliography --query @article,@inproceedings %}
+
+</div>
+
+## Patents
+
+<div class="publications">
+
+{% bibliography --query @misc %}
 
 </div>

@@ -2,6 +2,7 @@
 layout: page
 permalink: /repositories/
 title: repositories
+nav_icon: fa-solid fa-code-branch
 description: My public GitHub repositories.
 nav: true
 nav_order: 4

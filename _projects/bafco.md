@@ -2,6 +2,7 @@
 layout: page
 title: BaFCo
 description: A document understanding benchmark for complex Bangla forms (ECCV 2026)
+img: assets/img/publication_preview/bafco_data_diversity.png
 importance: 2
 category: research
 related_publications: true
@@ -12,5 +13,6 @@ related_publications: true
 I contributed to BaFCo, a benchmark of 200 multi-page Bangladeshi government forms from sectors such as agriculture, education, banking, and land management. The forms are annotated with 26 fine-grained entity types for **Document Layout Analysis** and **Key Information Extraction**. The paper evaluates frontier and open multimodal LLMs under zero-shot and chain-of-thought prompting. Current models struggle to understand Bangla forms, especially when they must locate fine-grained entities.
 
 - Paper: [arXiv:2607.05614](https://arxiv.org/abs/2607.05614), published at ECCV 2026
+- Poster: [ECCV 2026 virtual poster](https://eccv.ecva.net/virtual/2026/poster/5793)
 
 {% cite azad2026bafco %}

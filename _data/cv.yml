@@ -1,9 +1,6 @@
 cv:
-  name: Pranjal Kumar Nandi
-  label: Machine Learning Engineer II · Research Collaborator
-  email: pknandi130@gmail.com
-  location: Dhaka, Bangladesh
-  website: https://pknandi.github.io
+  # name, label, email, location, and website are intentionally omitted: the CV page
+  # shows a "Contact Information" card whenever any of them is set.
   summary: >-
     Machine learning engineer and researcher working on multimodal learning, vision–language models, and edge intelligence.
     Applying to Ph.D. programs in Computer Science for Fall 2027.
@@ -107,6 +104,20 @@ cv:
         date: 2026
         releaseDate: 2026
         url: https://arxiv.org/abs/2607.05614
+
+      - title: Using artificial intelligence/machine learning for remote monitoring and assisting of individuals under care, and systems and methods therefor
+        authors:
+          - James Michael Kelly
+          - David Lawrence Turock
+          - Justin Mark Brockie
+          - "..."
+          - "**Pranjal Kumar Nandi**"
+          - et al.
+        journal: US Patent Application Publication US20260229324A1
+        publisher: US Patent Application Publication US20260229324A1, published August 6, 2026 (pending)
+        date: 2026-08
+        releaseDate: 2026-08-06
+        url: https://patents.google.com/patent/US20260229324A1/en
 
       - title: Artificial intelligence machine learning method and system for identifying and redacting personally identifiable information in a monitored environment using real-time sensor data
         authors:

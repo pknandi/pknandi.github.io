@@ -1,12 +1,13 @@
 ---
 layout: page
 title: projects
+nav_icon: fa-solid fa-display
 permalink: /projects/
 description: Research, industry, and undergraduate projects.
 nav: true
 nav_order: 2
 display_categories: [research, industry, undergraduate]
-horizontal: false
+horizontal: true
 ---
 
 <!-- pages/projects.md -->

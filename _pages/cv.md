@@ -2,6 +2,7 @@
 layout: cv
 permalink: /cv/
 title: CV
+nav_icon: fa-solid fa-file-lines
 nav: true
 nav_order: 3
 cv_pdf: /assets/pdf/Pranjal_Kumar_Nandi_CV.pdf # you can also use external links here

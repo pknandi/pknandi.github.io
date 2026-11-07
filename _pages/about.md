@@ -1,20 +1,19 @@
 ---
 layout: about
 title: about
+nav_icon: fa-solid fa-user
 permalink: /
-subtitle: Machine Learning Engineer II at <a href='https://therapbd.com/'>Therap (BD) Ltd.</a> · Research Collaborator at <a href='https://ccds.ai/'>CCDS</a> · Dhaka, Bangladesh
+subtitle: "<span style='font-size: 1.2rem'><strong>Applying to Ph.D. programs for Fall 2027</strong> · <a href='/assets/pdf/Pranjal_Kumar_Nandi_CV.pdf'>CV (PDF)</a></span>"
 
 profile:
   align: right
-  # Add your photo as assets/img/prof_pic.jpg (replacing the template placeholder), then uncomment the next line.
-  # image: prof_pic.jpg
+  image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Dhaka, Bangladesh</p>
-    <p><a href="mailto:pknandi130@gmail.com">pknandi130@gmail.com</a></p>
+    <p>Machine Learning Engineer<br><a href="mailto:pknandi130@gmail.com">pknandi130@gmail.com</a><br>Dhaka, Bangladesh</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # social icons are shown in the navbar instead (enable_navbar_social in _config.yml)
 
 announcements:
   enabled: true # includes a list of news items
@@ -25,14 +24,15 @@ latest_posts:
   enabled: false
 ---
 
-I am a machine learning engineer and researcher working on **multimodal learning**, **vision–language models**, and **AI on edge devices**. I am applying to **Ph.D. programs in Computer Science for Fall 2027**.
+I am a machine learning engineer and researcher working on **multimodal learning**, **multi-agent collaboration**, **computer vision**, and **edge intelligence**. I want to build multimodal models that understand complex real-world inputs, such as documents, video, audio, and motion, and that run efficiently on resource-constrained devices.
 
-**Research interests:** Multimodal Learning · Multi-agent Collaboration · Computer Vision · Edge Intelligence
+At the [Center for Computational & Data Sciences (CCDS)](https://ccds.ai/), with Dr. A K M Mahbubur Rahman and Dr. Md Mofijul Islam, I am developing [streaming speech-driven 3D motion generation]({% link _projects/speech-to-motion.md %}): causal models that generate co-speech motion from live audio. I also work on test-time adaptation for vision–language models and on [PyTutor]({% link _projects/pytutor.md %}), an LLM-based tool for learning Python.
 
-Since July 2025 I have been a research collaborator at the [Center for Computational & Data Sciences (CCDS)](https://ccds.ai/), advised by Dr. A K M Mahbubur Rahman and Dr. Md Mofijul Islam. I currently develop [streaming speech-driven 3D motion generation]({% link _projects/speech-to-motion.md %}) models: causal multimodal generative models that produce co-speech motion from live audio with low latency, using knowledge distillation to improve realism and speech alignment. I also work on test-time adaptation for vision–language models and on [PyTutor]({% link _projects/pytutor.md %}), a pedagogical tool for learning Python built on LLMs. I contributed to [BaFCo](https://arxiv.org/abs/2607.05614), a benchmark for complex Bangla form understanding published at **ECCV 2026**.
+For five years at [Therap (BD) Ltd.](https://therapbd.com/) I have built ML systems for care settings, from privacy-preserving computer vision on NVIDIA Jetson to RAG chatbots and on-device audio. I hold a B.Sc. in Computer Science and Engineering from the **University of Dhaka** (2021), where I researched task offloading for energy-harvesting IoT with Prof. Md. Abdur Razzaque.
 
-At [Therap (BD) Ltd.](https://therapbd.com/) I have spent four years building ML systems for real care settings. I have built a retrieval-augmented (RAG) support chatbot with its own benchmark datasets and automated evaluation pipelines, sound classification and live speech-to-text running on Raspberry Pi, and a privacy-preserving computer vision system for monitoring patient activity on NVIDIA Jetson devices. The video redaction work from that system led to a **granted U.S. patent** ([US12462909B2](https://patents.google.com/patent/US12462909B2)).
+**Highlights**
 
-I received my B.Sc. in Computer Science and Engineering from the **University of Dhaka** in 2021, where I worked in the Green Networking Research Group under Prof. Md. Abdur Razzaque. I studied game theory, deep learning, optimization, and meta-heuristic methods for task offloading and resource allocation in IoT and cloud computing. I developed an algorithm based on Social Cognitive Optimization that finds task offloading policies for energy-harvesting IoT devices. That work was published in the [_Journal of Network and Computer Applications_](https://doi.org/10.1016/j.jnca.2023.103766).
-
-In my Ph.D., I want to build multimodal models that understand complex real-world inputs, such as documents, video, audio, and motion, and that can work together and run efficiently on resource-constrained devices.
+- **ECCV 2026:** [BaFCo](https://arxiv.org/abs/2607.05614), a benchmark for complex Bangla form understanding
+- **JNCA 2024:** first-author [journal paper](https://doi.org/10.1016/j.jnca.2023.103766) on task offloading for energy-harvesting IoT
+- **U.S. patents:** one granted ([US12462909B2](https://patents.google.com/patent/US12462909B2)), one pending ([US20260229324A1](https://patents.google.com/patent/US20260229324A1/en))
+- **Five years of industry ML** across computer vision, LLMs/RAG, and audio on edge devices
