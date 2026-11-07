@@ -6,15 +6,15 @@ Machine learning engineer and researcher working on multimodal learning, visionâ
 
 ## Contents
 
-| Path                                            | What it holds                     |
-| ----------------------------------------------- | --------------------------------- |
-| `_pages/about.md`                               | Homepage bio                      |
-| `_bibliography/papers.bib`                      | Publications and patents          |
-| `_projects/`                                    | Project pages                     |
-| `_news/`                                        | News items shown on the homepage  |
-| `_data/cv.yml`                                  | Data for the CV page              |
-| `assets/pdf/Pranjal_Kumar_Nandi_CV.pdf`         | Downloadable CV                   |
-| `assets/img/publication_preview/`               | Publication and project figures   |
+| Path                                    | What it holds                    |
+| --------------------------------------- | -------------------------------- |
+| `_pages/about.md`                       | Homepage bio                     |
+| `_bibliography/papers.bib`              | Publications and patents         |
+| `_projects/`                            | Project pages                    |
+| `_news/`                                | News items shown on the homepage |
+| `_data/cv.yml`                          | Data for the CV page             |
+| `assets/pdf/Pranjal_Kumar_Nandi_CV.pdf` | Downloadable CV                  |
+| `assets/img/publication_preview/`       | Publication and project figures  |
 
 ## Run locally
 
