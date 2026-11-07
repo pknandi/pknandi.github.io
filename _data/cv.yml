@@ -1,189 +1,238 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
-  image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  name: Pranjal Kumar Nandi
+  label: Machine Learning Engineer II · Research Collaborator
+  email: pknandi130@gmail.com
+  location: Dhaka, Bangladesh
+  website: https://pknandi.github.io
+  summary: >-
+    Machine learning engineer and researcher working on multimodal learning, vision–language models, and edge intelligence.
+    Applying to Ph.D. programs in Computer Science for Fall 2027.
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
     - network: GitHub
-      username: example
+      username: pknandi
     - network: LinkedIn
-      username: example
-
-  address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+      username: pranjal-kumar-nandi
+    - network: Google Scholar
+      username: XGiRmMwAAAAJ
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
+      - institution: University of Dhaka
+        location: Dhaka, Bangladesh
+        url: https://www.du.ac.bd/
+        area: Computer Science and Engineering
+        degree: B.Sc.
+        date: 2021
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Undergraduate research: Green Networking Research Group (advisor: Prof. Md. Abdur Razzaque)"
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
-        highlights:
-          - Description 1.
-          - Description 2.
+    Academic Interests:
+      - name: Research
+        icon: fa-solid fa-flask
+        keywords: Multimodal Learning, Multi-agent Collaboration, Computer Vision, Edge Intelligence
 
     Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+      - company: Center for Computational & Data Sciences (CCDS)
+        position: Research Collaborator
+        location: Dhaka, Bangladesh
+        url: https://ccds.ai/
+        start_date: 2025-07
+        summary: "Advisors: Dr. A K M Mahbubur Rahman, Dr. Md Mofijul Islam"
         highlights:
-          - Relativity
-          - Description 2.
+          - Collaborating on test-time adaptation in VLMs and PyTutor, an LLM-based pedagogical tool for learning Python.
+          - Contributed to BaFCo, a document-understanding benchmark for complex Bangla form comprehension, published at ECCV 2026.
+          - Developing streaming speech-driven 3D motion generation models (since April 2026), investigating causal multimodal learning and knowledge distillation for low-latency, speech-aligned motion synthesis.
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
+      - company: Therap (BD) Ltd.
+        position: Machine Learning Engineer II
+        location: Dhaka, Bangladesh
+        url: https://therapbd.com/
+        start_date: 2024-10
         highlights:
-          - Description 1.
-          - Description 2.
+          - Developed an LLM-powered retrieval-augmented generation (RAG) support chatbot from user guides and support chat data; built automated data scraping and processing pipelines, improved answer quality through retrieval enhancements and prompt engineering, and developed benchmark datasets and automated evaluation pipelines.
+          - Built a spectrogram-based audio classification model for detecting sounds in care facilities, using real-world audio collected with Raspberry Pi 5 and mini microphones; refined preprocessing to reduce false positives.
+          - Implemented real-time speech-to-text with OpenAI Whisper for live audio streams on Raspberry Pi; tuned preprocessing to reduce latency and transcription errors.
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
+      - company: Therap (BD) Ltd.
+        position: Machine Learning Engineer
+        location: Dhaka, Bangladesh
+        url: https://therapbd.com/
+        start_date: 2022-10
+        end_date: 2024-09
         highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
+          - Designed and built a computer vision system that monitors patient activity remotely while preserving privacy.
+          - Researched video-understanding and vision–language models and wrote recommendations to guide model selection.
+          - Devised algorithms that aggregate and statistically analyze model outputs into real-time, high-level activity data.
+          - Contributed to a video redaction pipeline using person detection, instance segmentation, and multi-object tracking.
+          - Co-inventor on a granted U.S. patent for non-invasive monitoring of identifiable information in medical facilities.
 
-    Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
+      - company: Therap (BD) Ltd.
+        position: Associate Machine Learning Engineer
+        location: Dhaka, Bangladesh
+        url: https://therapbd.com/
+        start_date: 2021-09
+        end_date: 2022-09
+        highlights:
+          - Researched and tested ML models and datasets for activity recognition, pose estimation, segmentation, and face recognition in medical care.
+          - Researched ways to enhance NVIDIA Jetson devices and DeepStream SDK capabilities.
 
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
+      - company: Green Networking Research Group (GNR), University of Dhaka
+        position: Undergraduate Research Assistant
+        location: Dhaka, Bangladesh
+        start_date: 2020-01
+        end_date: 2021-06
+        summary: "Supervisor: Prof. Md. Abdur Razzaque, Professor & Chairman, Department of CSE, University of Dhaka"
+        highlights:
+          - Researched game theory, deep learning, optimization, and meta-heuristic methods for task offloading and resource allocation in cloud computing, with a focus on IoT applications.
+          - Developed a novel algorithm using Social Cognitive Optimization, a meta-heuristic approach, to determine optimal task offloading policies for energy-harvesting IoT devices.
+          - Gained in-depth knowledge of research methodology and practical experience conducting studies and writing scholarly papers.
 
     Publications:
-      - title: Zur Elektrodynamik bewegter Körper
+      - title: "BaFCo: A Document Understanding Benchmark for Complex Bangla Form Comprehension"
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
+          - Abu Tyeb Azad
+          - Ishita Sur Apan
+          - Fahim Ahmed
+          - Sumaiya Karim Katha
+          - Ezharuddin Jubaer
+          - Armun Alam
+          - "**Pranjal Kumar Nandi**"
+          - Amin Ahsan Ali
+          - Aman Chadha
+          - Md Mofijul Islam
+          - AKM Mahbubur Rahman
+        journal: European Conference on Computer Vision (ECCV)
+        publisher: European Conference on Computer Vision (ECCV), Malmö, Sweden
+        date: 2026
+        releaseDate: 2026
+        url: https://arxiv.org/abs/2607.05614
 
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
+      - title: Artificial intelligence machine learning method and system for identifying and redacting personally identifiable information in a monitored environment using real-time sensor data
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
+          - David Lawrence Turock
+          - Justin Mark Brockie
+          - James Michael Kelly
+          - "..."
+          - "**Pranjal Kumar Nandi**"
+          - et al.
+        journal: US Patent US12462909B2
+        publisher: US Patent US12462909B2, granted November 4, 2025
+        date: 2025-11
+        releaseDate: 2025-11-04
+        url: https://patents.google.com/patent/US12462909B2
 
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
+      - title: Task offloading to edge cloud balancing utility and cost for energy harvesting Internet of Things
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
-
-    Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Languages:
-      - name: German
-        summary: "Native speaker"
-
-      - name: English
-        summary: "Fluent"
-
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
-
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
+          - "**Pranjal Kumar Nandi**"
+          - Md Rejaul Islam Reaj
+          - Sujan Sarker
+          - Md Abdur Razzaque
+          - Md Mamun-or-Rashid
+          - Palash Roy
+        journal: Journal of Network and Computer Applications 221 (2024)
+        publisher: Journal of Network and Computer Applications, vol. 221, 103766, Elsevier
+        date: 2024-01
+        releaseDate: 2024-01
+        doi: 10.1016/j.jnca.2023.103766
+        url: https://doi.org/10.1016/j.jnca.2023.103766
 
     Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
+      - name: Streaming Speech-Driven 3D Motion Generation
+        start_date: 2026-04
         highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
+          - Developing a causal multimodal generative model for continuous 3D co-speech motion synthesis from streaming audio, without future audio context.
+          - Investigating knowledge distillation and inference strategies to improve motion realism and speech alignment under streaming constraints.
+          - Designing latency audits and evaluation protocols to assess audio look-ahead, temporal alignment, and motion continuity in online generation.
 
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - name: Task Offloading Policy in Mobile Edge Cloud — task offloading optimization for energy-harvesting IoT devices
+        date: 2021
+        highlights:
+          - Designed and implemented a system and algorithm that optimize computation offloading decisions from IoT devices to the edge cloud, improving user utility and system efficiency.
 
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - name: Dishari — AI-enabled pathfinder robot pair
+        date: 2019
+        highlights:
+          - A ground robot and a drone that navigate using computer vision written in Python.
+
+      - name: Autonomous Traffic Monitoring and Congestion Control
+        date: 2018
+        highlights:
+          - IoT-based traffic management using edge computing and fuzzy neural networks for real-time monitoring, noise mapping, and optimal route generation.
+
+      - name: Sumobot — sensor-based sumo robot
+        date: 2018
+        highlights:
+          - Built an Arduino-based sumo robot, integrating sensor feedback and motor control for navigation and pushing opponents out of the ring.
+
+      - name: Decoded — jigsaw puzzle game
+        date: 2017
+        highlights:
+          - Single-player jigsaw puzzle game in C++ using the Borland Graphics Interface (BGI).
+
+    Skills:
+      - name: Languages
+        icon: fa-solid fa-code
+        keywords: Python, C, C++, JavaScript, MATLAB
+      - name: Frameworks / Libraries
+        icon: fa-solid fa-layer-group
+        keywords: PyTorch, TensorFlow, Keras, FastAPI, Node.js, NVIDIA DeepStream
+      - name: Databases / Tools
+        icon: fa-solid fa-database
+        keywords: Docker, MySQL, PostgreSQL, SQLAlchemy, LaTeX, Linux, Git, Kafka, RabbitMQ
+      - name: Edge Devices
+        icon: fa-solid fa-microchip
+        keywords: NVIDIA Jetson NX, Jetson AGX Orin, Arduino, Raspberry Pi, ADLINK Neon
+
+    Awards:
+      - title: Secondary School Certificate Scholarship
+        authors:
+          - Education Board, Government of Bangladesh
+        awarder: Education Board, Government of Bangladesh
+        date: 2014–2016
+      - title: Junior School Certificate Scholarship
+        authors:
+          - Education Board, Government of Bangladesh
+        awarder: Education Board, Government of Bangladesh
+        date: 2012–2014
+      - title: Rank 7, Inter University Programming Contest
+        authors:
+          - Military Institute of Science & Technology
+        awarder: Military Institute of Science & Technology
+        date: 2019
+      - title: Rank 13, Inter University Programming Contest
+        authors:
+          - Bangladesh University of Professionals
+        awarder: Bangladesh University of Professionals
+        date: 2019
+      - title: Rank 20, Inter University Programming Contest
+        authors:
+          - State University of Bangladesh
+        awarder: State University of Bangladesh
+        date: 2019
+      - title: Champion, Bracathon 3.0 (Micro-finance Category)
+        authors:
+          - BRAC, Bangladesh
+        awarder: BRAC, Bangladesh
+        date: 2019
+      - title: Runner Up, Line Follower Robot Race
+        authors:
+          - North South University, Dhaka
+        awarder: North South University, Dhaka
+        date: 2019
+      - title: Runner Up, Smart City Idea Competition, Robofest
+        authors:
+          - University of Dhaka
+        awarder: University of Dhaka
+        date: 2017
+      - title: District Champion, Mathematics Olympiad
+        authors:
+          - Mathematics Olympiad, Bangladesh
+        awarder: Mathematics Olympiad, Bangladesh
+        date: 2008
+
+    Leadership:
+      - label: Student Activities Coordinator (2020–2021)
+        details: IEEE Computer Society, Student Branch, University of Dhaka
+      - label: Co-founder (2017–2019)
+        details: Techno Rex, Dhaka, Bangladesh

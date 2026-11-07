@@ -1,9 +1,10 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
+"ECCV":
+  url: https://eccv.ecva.net/
   color: "#00369f"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"JNCA":
+  url: https://www.sciencedirect.com/journal/journal-of-network-and-computer-applications
+  color: "#e9711c"
 
-"Vision":
+"Patent":
   color: "#009f36"
