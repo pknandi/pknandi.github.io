@@ -1,4 +1,4 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> RAG Support Chatbot | Pranjal Kumar Nandi </title> <meta name="author" content="Pranjal Kumar Nandi"> <meta name="description" content="A retrieval-augmented LLM chatbot with benchmarks and automated evaluation"> <meta name="keywords" content="Pranjal Kumar Nandi, machine learning, multimodal learning, vision-language models, computer vision, edge intelligence, document understanding"> <meta property="og:site_name" content="Pranjal Kumar Nandi"> <meta property="og:type" content="website"> <meta property="og:title" content="Pranjal Kumar Nandi | RAG Support Chatbot"> <meta property="og:url" content="https://pknandi.github.io/projects/rag-chatbot/"> <meta property="og:description" content="A retrieval-augmented LLM chatbot with benchmarks and automated evaluation"> <meta property="og:locale" content="en"> <meta name="twitter:card" content="summary"> <meta name="twitter:title" content="RAG Support Chatbot"> <meta name="twitter:description" content="A retrieval-augmented LLM chatbot with benchmarks and automated evaluation"> <script type="application/ld+json">
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> RAG Support Chatbot | Pranjal Kumar Nandi </title> <meta name="author" content="Pranjal Kumar Nandi"> <meta name="description" content="A retrieval-augmented LLM chatbot with benchmarks and automated evaluation"> <meta name="keywords" content="Pranjal Kumar Nandi, machine learning, multimodal learning, vision-language models, computer vision, edge intelligence, document understanding"> <meta property="og:site_name" content="Pranjal Kumar Nandi"> <meta property="og:type" content="website"> <meta property="og:title" content="Pranjal Kumar Nandi | RAG Support Chatbot"> <meta property="og:url" content="https://pknandi.github.io/projects/rag-chatbot/"> <meta property="og:description" content="A retrieval-augmented LLM chatbot with benchmarks and automated evaluation"> <meta property="og:image" content="https://pknandi.github.io/assets/img/prof_pic.jpg"> <meta property="og:locale" content="en"> <meta name="twitter:card" content="summary"> <meta name="twitter:title" content="RAG Support Chatbot"> <meta name="twitter:description" content="A retrieval-augmented LLM chatbot with benchmarks and automated evaluation"> <meta name="twitter:image" content="https://pknandi.github.io/assets/img/prof_pic.jpg"> <script type="application/ld+json">
     {
         "author":
         {
@@ -17,11 +17,108 @@
     }
   </script> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
   :root {
-    --max-content-width: 930px;
+    --max-content-width: 1100px;
   }
-</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://pknandi.github.io/projects/rag-chatbot/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="/assets/img/favicon.svg?v=00f10a204e6a5972648d7c881d24ce8f"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://pknandi.github.io/projects/rag-chatbot/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
     initTheme();
-  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Pranjal Kumar Nandi </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item active"> <a class="nav-link" href="/projects/">projects <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item "> <a class="nav-link" href="/repositories/">repositories </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">RAG Support Chatbot</h1> <p class="post-description">A retrieval-augmented LLM chatbot with benchmarks and automated evaluation</p> </header> <article> <p><strong>Therap (BD) Ltd.</strong> · Oct 2024 – present</p> <ul> <li>Developed an LLM-powered, retrieval-augmented generation (RAG) support chatbot built on user guides and support chat data.</li> <li>Built automated pipelines for scraping and processing the source data.</li> <li>Improved answer quality through retrieval enhancements and prompt engineering.</li> <li>Created benchmark datasets and automated evaluation pipelines to track response quality.</li> </ul> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Pranjal Kumar Nandi. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Last updated: November 07, 2026. </div> </footer> <script>
+  </script> </head> <body class="fixed-top-nav "> <style>
+  #navbar {
+    opacity: 1;
+    background-color: var(--global-bg-color);
+    background-color: color-mix(in srgb, var(--global-bg-color) 88%, transparent);
+    -webkit-backdrop-filter: saturate(160%) blur(10px);
+    backdrop-filter: saturate(160%) blur(10px);
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+  /* Social icons (homepage) */
+  #navbar .navbar-brand.social {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    font-size: 1.55rem;
+    padding: 0;
+  }
+  #navbar .navbar-brand.social a {
+    display: inline-flex;
+    line-height: 1;
+    transition: transform 0.15s ease;
+  }
+  #navbar .navbar-brand.social a i::before {
+    color: var(--global-text-color-light);
+    transition: color 0.15s ease;
+  }
+  #navbar .navbar-brand.social a:hover {
+    transform: translateY(-1px);
+  }
+  #navbar .navbar-brand.social a i.ai {
+    font-size: 1.15em; /* academicons glyphs run smaller than Font Awesome */
+  }
+  /* Keep the theme toggle vertically aligned with the search control */
+  #navbar .toggle-container,
+  #navbar #light-toggle {
+    display: flex;
+    align-items: center;
+  }
+  #navbar #light-toggle {
+    transform: none; /* the theme nudges it down 4px for top-aligned items; ours are centered */
+  }
+  #navbar .navbar-brand.social a:hover i::before {
+    color: var(--global-theme-color);
+  }
+  /* Nav links */
+  #navbar .navbar-menu-list > .nav-item > .nav-link {
+    text-transform: capitalize;
+    padding: 0.4rem 0.75rem;
+    border-radius: 0.5rem;
+    transition: color 0.15s ease, background-color 0.15s ease;
+  }
+  #navbar .navbar-menu-list > .nav-item > .nav-link:hover {
+    color: var(--global-theme-color);
+    background-color: color-mix(in srgb, var(--global-theme-color) 9%, transparent);
+  }
+  #navbar .navbar-menu-list > .nav-item.active > .nav-link {
+    font-weight: 500;
+    color: var(--global-theme-color);
+    background-color: color-mix(in srgb, var(--global-theme-color) 14%, transparent);
+  }
+  #navbar .nav-link > i.fa-fw {
+    font-size: 0.9em;
+    margin-right: 0.2rem;
+    opacity: 0.7;
+    transition: opacity 0.15s ease;
+  }
+  #navbar .nav-link:hover > i.fa-fw,
+  #navbar .nav-item.active > .nav-link > i.fa-fw {
+    opacity: 1;
+  }
+  @media (min-width: 576px) {
+    #navbar .navbar-menu-list {
+      align-items: center;
+      gap: 0.15rem;
+    }
+    /* Divider between page links and the search / theme controls */
+    #navbar .navbar-menu-list > .nav-item:has(#search-toggle) {
+      margin-left: 0.5rem;
+      padding-left: 0.6rem;
+      border-left: 1px solid var(--global-divider-color);
+    }
+  }
+  @media (max-width: 575.98px) {
+    #navbar .navbar-menu-list > .nav-item {
+      width: 100%;
+    }
+    #navbar .navbar-menu-list > .nav-item > .nav-link {
+      margin: 0.1rem 0;
+    }
+    /* Line the search and theme controls up with the page links */
+    #navbar #search-toggle {
+      padding-left: 0.75rem;
+    }
+    #navbar .toggle-container {
+      padding-left: 0.3rem; /* the toggle button is 2rem wide with its icon centered */
+    }
+  }
+</style> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Pranjal Kumar Nandi </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/"><i class="fa-solid fa-user fa-fw" aria-hidden="true"></i> about </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/"><i class="fa-solid fa-book-open fa-fw" aria-hidden="true"></i> publications </a> </li> <li class="nav-item active"> <a class="nav-link" href="/projects/"><i class="fa-solid fa-display fa-fw" aria-hidden="true"></i> projects <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/"><i class="fa-solid fa-file-lines fa-fw" aria-hidden="true"></i> CV </a> </li> <li class="nav-item "> <a class="nav-link" href="/repositories/"><i class="fa-solid fa-code-branch fa-fw" aria-hidden="true"></i> repositories </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">RAG Support Chatbot</h1> <p class="post-description">A retrieval-augmented LLM chatbot with benchmarks and automated evaluation</p> </header> <article> <p><strong>Therap (BD) Ltd.</strong> · Oct 2024 – present</p> <ul> <li>Developed an LLM-powered, retrieval-augmented generation (RAG) support chatbot built on user guides and support chat data.</li> <li>Built automated pipelines for scraping and processing the source data.</li> <li>Improved answer quality through retrieval enhancements and prompt engineering.</li> <li>Created benchmark datasets and automated evaluation pipelines to track response quality.</li> </ul> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Pranjal Kumar Nandi. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Last updated: November 07, 2026. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
@@ -41,7 +138,7 @@ ninja.data = [{
     },
   },{id: "nav-publications",
           title: "publications",
-          description: "Publications and patents in reverse chronological order.",
+          description: "Papers and patents in reverse chronological order.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
@@ -84,6 +181,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-bafco-our-benchmark-for-complex-bangla-form-understanding-was-accepted-at-eccv-2026-malmö-sweden-arxiv",
           title: 'BaFCo, our benchmark for complex Bangla form understanding, was accepted at ECCV 2026...',
+          description: "",
+          section: "News",},{id: "news-our-u-s-patent-application-on-using-ai-ml-for-remote-monitoring-and-assistance-of-individuals-under-care-was-published-us20260229324a1",
+          title: 'Our U.S. patent application on using AI/ML for remote monitoring and assistance of...',
           description: "",
           section: "News",},{id: "news-i-am-applying-to-ph-d-programs-for-fall-2027-in-multimodal-learning-vision-language-models-and-edge-intelligence-my-cv-is-here",
           title: 'I am applying to Ph.D. programs for Fall 2027 in multimodal learning, vision–language...',
